@@ -63,7 +63,9 @@ body::before{
 @media (prefers-reduced-motion: reduce){
   body{ animation:none; }
 }
-
+@media (max-width: 600px){
+  body::before{ background: rgba(0,0,0,.35); }
+}
 /* ---------- Layout ---------- */
 .wrap{
   max-width:var(--wrap-max);
@@ -185,3 +187,4 @@ h3{
   h1{ font-size:26px; }
   .iconbtn{ padding:11px 14px; }
 }
+
